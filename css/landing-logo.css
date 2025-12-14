@@ -1,0 +1,32 @@
+/* Logo Styles */
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    /* Invert logo color for dark backgrounds/overlays if needed, 
+       but currently navbar is white, so standard logo (assuming black text) is fine. 
+       If logo has background, mix-blend-mode might help */
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+    /* Invert for dark footer if the logo is black text */
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+.scroll-indicator{
+    color: var(--black);
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 40px;
+    }
+    
+    .footer-logo-img {
+        height: 50px;
+    }
+}
